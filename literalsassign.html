@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Literals</title>
+</head>
+<body>
+    <script>
+        //Multiline
+        // Without template literal
+        console.log('Menu Items \nSandwich \nFrench Fries \nPotato wedges \nDonuts \nPizza');
+
+        // With template literal
+        console.log(`Menu Items
+        Sandwich
+        French Fries
+        Potato wedges
+        Donuts
+        Pizza`);
+
+        //Expression
+        var p =50;//price per item
+        var n =5;//Total items
+        
+        var price =`${(p*n)}`;
+        console.log("Total price of items is"+ price);
+
+        //TaggedLiteral
+        function TaggedLiteralEg(strings) {
+        document.write(strings);
+    }
+    TaggedLiteralEg`Fast Food at lowest price.`;
+    //String.raw
+    var s=String.raw`Grab your favourite food from menu at lowest price.`;
+    
+    document.write("<br>"+s);
+   
+        </script>
+    
+     
+</body>
+</html>
